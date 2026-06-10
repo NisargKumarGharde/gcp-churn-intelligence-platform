@@ -112,7 +112,7 @@ Features engineered in `1_feature_engineering.sql` (tenure buckets, charge-per-t
 | Training records | ~5,600 |
 | Test records | ~1,400 |
 | ROC-AUC | 0.84+ |
-| High-risk precision | 78%+ |
+| High-risk precision | 52%+ |
 | Dataset | [IBM Telco Customer Churn](https://www.kaggle.com/datasets/blastchar/telco-customer-churn) |
 
 ---
