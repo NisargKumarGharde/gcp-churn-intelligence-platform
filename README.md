@@ -1,22 +1,31 @@
 # Smart Customer Churn Intelligence Platform (GCP)
 
-An end-to-end data warehousing and machine learning platform built completely within Google Cloud to predict customer flight risk and deliver actionable analytics to retention operations.
+**Problem Statement:** A SaaS telecommunications provider was experiencing a ~26% annual customer churn rate with no early-warning detection system. 
+
+**Solution:** This platform ingests customer usage events in real-time via Pub/Sub, engineers churn-predictive features defensively in BigQuery, and utilizes a BQML XGBoost classifier to score customers 30 days prior to predicted churn. This enables proactive, targeted retention campaigns via a live operational dashboard.
 
 ## 🔗 Live Interactive Assets
-- **Production Dashboard:** [View Live Looker Studio Dashboard](https://datastudio.google.com/u/0/reporting/c06e5abd-8846-48aa-8c31-2b1c29d90237/page/Jgj0F)
+- **Production Dashboard:** [View Live Looker Studio Executive Dashboard](https://datastudio.google.com/u/0/reporting/c06e5abd-8846-48aa-8c31-2b1c29d90237/page/Jgj0F)
 
 ## 🏗️ Architecture Overview
-- **Data Warehouse Engine:** Google Cloud BigQuery (Serverless execution environment)
+`![Architecture Diagram](image_50b2db.png)`
+
+- **Ingestion & Streaming:** Google Cloud Pub/Sub (simulated via Python publisher)
+- **Data Warehouse Engine:** Google Cloud BigQuery 
 - **Feature Engineering Layer:** Optimized SQL Views utilizing defensive ELT patterns
 - **Machine Learning Core:** BigQuery ML (BQML) distributed XGBoost Engine
-- **Business Intelligence Reporting:** Interactive Executive Dashboard via Looker Studio
+- **Business Intelligence:** Interactive Executive Dashboard via Looker Studio
 
 ## 📁 Repository Structure
-- `scripts/1_feature_engineering.sql`: Contains pipeline logic executing data cleansing, type casting, missing value handling, and dynamic tenure bucket generation.
-- `scripts/2_model_training.sql`: Configures and invokes the `BOOSTED_TREE_CLASSIFIER` execution routine, holding back validation cohorts automatically via `AUTO_SPLIT`.
-- `scripts/3_batch_predictions.sql`: Runs batch inference routines to append predictive probabilities alongside historical tenure scales.
-
-## 🚀 Key Engineering Showcases
-1. **Defensive Data Parsing:** Addressed empty string records (`' '`) natively within the source telemetry pipeline using SQL conditional strategies (`NULLIF(TRIM(TotalCharges), '')`) to ensure safe numerical evaluation.
-2. **In-Place Distributed Machine Learning:** Completely bypassed massive local resource demands by delegating tree-based execution models directly to BigQuery's columnar storage layers.
-3. **Actionable Operational Outputs:** Converted raw mathematical prediction probability distributions into high-risk cohort matrices to facilitate immediate real-world retention campaigns.
+```text
+├── pipeline/
+│   ├── publisher.py          # Streams live events to Pub/Sub
+│   ├── bigquery_setup.py     # Programmatic IaC for BQ resources
+│   └── requirements.txt      # Python dependencies
+├── sql/
+│   ├── 1_feature_engineering.sql # ELT, casting, missing value handling
+│   ├── 2_model_training.sql      # BQML BOOSTED_TREE_CLASSIFIER logic
+│   └── 3_batch_predictions.sql   # Batch inference routines
+├── functions/
+│   └── predict/              # (WIP) Real-time scoring trigger
+└── README.md
