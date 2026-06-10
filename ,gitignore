@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+.env
+venv/
+env/
+
+# GCP Credentials
+credentials/
+*.json
+*service_account*
+
+# Data
+*.csv
+*.parquet
