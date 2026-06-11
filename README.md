@@ -1,10 +1,10 @@
 # Smart Customer Churn Intelligence Platform
 ### End-to-End ML Pipeline on Google Cloud Platform
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" height="40" alt="Python"> &nbsp;
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg" height="40" alt="GCP"> &nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" height="40" alt="Python" title="Python"> &nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg" height="40" alt="GCP" title="Google Cloud Provider"> &nbsp;
 <img src="https://substackcdn.com/image/fetch/$s_!eN4O!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F03ed6c27-13c2-4389-8c3f-5f172965f9ac_938x316.heic" height="40" alt="XGBoost"> &nbsp;
-<img src="https://cdn.simpleicons.org/looker?view=default&fill=%234285F4" height="40" alt="Looker Studio">
+<img src="https://cdn.simpleicons.org/looker?view=default&fill=%234285F4" height="40" alt="Looker Studio" title="Data Studio">
 
 ---
 
