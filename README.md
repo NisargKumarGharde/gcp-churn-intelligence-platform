@@ -18,7 +18,7 @@ An end-to-end churn intelligence platform built entirely on GCP free-tier servic
 
 - **Ingests** customer usage events in real-time via Pub/Sub
 - **Stores and transforms** raw events in BigQuery using defensive ELT patterns  
-- **Trains** an XGBoost classifier (ROC-AUC: 0.84+) to score customers 30 days before predicted churn
+- **Trains** an XGBoost classifier (ROC-AUC: 0.84+) to identify high-risk customers before they churn, enabling proactive retention campaigns
 - **Serves** real-time predictions via Cloud Functions triggered by Pub/Sub
 - **Visualizes** high-risk cohorts, churn drivers, and retention KPIs in a live Looker Studio dashboard
 
