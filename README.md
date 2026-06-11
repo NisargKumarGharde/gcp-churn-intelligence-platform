@@ -29,7 +29,7 @@ An end-to-end churn intelligence platform built entirely on GCP free-tier servic
 
 ## Architecture
 
-![Architecture Diagram](image_50b2db.png)
+![Architecture Diagram](architecture.png)
 
 | Layer | Service | Role |
 |---|---|---|
