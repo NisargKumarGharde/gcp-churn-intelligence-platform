@@ -38,7 +38,7 @@ An end-to-end churn intelligence platform built entirely on GCP free-tier servic
 | Feature Engineering | BigQuery SQL Views | Defensive ELT: type casting, tenure bucketing, charge ratios |
 | ML Training | XGBoost + Google Colab | Trained classifier exported as `.joblib` artifact |
 | Serving | Cloud Functions | Real-time scoring on new Pub/Sub events |
-| Visualization | Looker Studio | Executive dashboard — risk cohorts + churn drivers |
+| Visualization | Data Studio | Executive dashboard — risk cohorts + churn drivers |
 
 ---
 
@@ -152,7 +152,7 @@ Download the `.joblib` artifacts and place them in `functions/predict/`.
 ## Tech Stack
 
 `Python` `Google Cloud Pub/Sub` `Google BigQuery` `BigQuery ML` `Cloud Functions`  
-`XGBoost` `Scikit-learn` `Pandas` `Google Colab` `Looker Studio` `Docker-ready`
+`XGBoost` `Scikit-learn` `Pandas` `Google Colab` `Data Studio` `Docker-ready`
 
 ---
 
