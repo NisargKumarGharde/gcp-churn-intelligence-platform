@@ -44,7 +44,7 @@ An end-to-end churn intelligence platform built entirely on GCP free-tier servic
 
 ## Live Dashboard
 
-**[→ View Live Looker Studio Dashboard](https://datastudio.google.com/u/0/reporting/c06e5abd-8846-48aa-8c31-2b1c29d90237/page/Jgj0F)**
+**[→ View Live Looker Studio Dashboard]( https://datastudio.google.com/reporting/c06e5abd-8846-48aa-8c31-2b1c29d90237)**
 
 The dashboard surfaces:
 - Real-time churn probability distribution across the customer base
