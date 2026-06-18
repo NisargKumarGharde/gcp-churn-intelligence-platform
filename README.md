@@ -6,6 +6,7 @@
 <img src="https://substackcdn.com/image/fetch/$s_!eN4O!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F03ed6c27-13c2-4389-8c3f-5f172965f9ac_938x316.heic" height="40" alt="XGBoost"> &nbsp;
 <img src="https://cdn.simpleicons.org/looker?view=default&fill=%234285F4" height="40" alt="Looker Studio" title="Data Studio">
 
+> This is the cloud-native counterpart to my [Telecom Operator Customer Churn Predictor](https://github.com/NisargKumarGharde/Telecom-Operator-Customer-Churn-Predictor): same churn-prediction problem, but executed as a fully serverless BigQuery pipeline (SQL-based feature engineering, in-warehouse BQML training, Looker Studio reporting) rather than a local scikit-learn workflow.
 ---
 
 ## Problem Statement
